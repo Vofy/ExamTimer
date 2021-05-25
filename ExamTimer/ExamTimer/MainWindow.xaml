@@ -3,16 +3,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ExamTimer"
+        xmlns:Syncfusion="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
         mc:Ignorable="d"
-        Title="MainWindow" Height="491.65" Width="701.307">
-    <Grid Width="691">
-        <Label Margin="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="36">
-            <Label Name="t"/>
+        Title="SPOŠ ICT | Exam Timer" Height="509.65" Width="1007.307" Icon="icon.png">
+    <Grid Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Margin="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="72" Padding="5,0">
+            <Label Name="Title" Content="Title" Padding="5,0"/>
         </Label>
-        <Label Margin="0,68,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="22">
-            <Label Name="Subtitle"/>
+        <Label Margin="0,101,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="36" Padding="5,0">
+            <Label Name="Subtitle" Content="Subtitle" Padding="5,0"/>
         </Label>
-        <ProgressBar Height="10" Margin="1,93,0,0" VerticalAlignment="Top"/>
+        <ProgressBar Height="10" Margin="0,154,0,0" VerticalAlignment="Top"/>
+        <Grid Margin="0,169,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Margin="0" HorizontalContentAlignment="Center" FontSize="72" VerticalAlignment="Center">
+                <Label x:Name="Title1" Content="00:00"/>
+            </Label>
+        </Grid>
     </Grid>
 </Window>

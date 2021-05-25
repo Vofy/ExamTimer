@@ -22,21 +22,24 @@ namespace ExamTimer
     {
         private static System.Timers.Timer timer;
         private Part[] examParts;
+        private int currentTimer;
 
         public MainWindow()
         {
             InitializeComponent();
 
             examParts = new Part[] {
-                new Part("Introduction", 1000),
-                new Part("Part 1", 4000),
-                new Part("Part 2", 4000, new Part[] {
-                    new Part("Subpart 1", 2000),
-                    new Part("Subpart 2", 2000)}),
-                new Part("Part 3", 6000, new Part[] {
-                    new Part("Subpart 1", 3000),
-                    new Part("Subpart 2", 3000)}),
+                new Part("Introduction", 60),
+                new Part("Part 1", 240),
+                new Part("Part 2", 240, new Part[] {
+                    new Part("Subpart 1", 120),
+                    new Part("Subpart 2", 120)}),
+                new Part("Part 3", 360, new Part[] {
+                    new Part("Subpart 1", 180),
+                    new Part("Subpart 2", 180)})
             };
+
+            currentTimer = 60;
 
             // Nastavení intervalu na 1 sekundu
             timer = new System.Timers.Timer(1000);
@@ -50,8 +53,10 @@ namespace ExamTimer
 
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            
-            throw new NotImplementedException();
+            TimeSpan t = TimeSpan.FromSeconds(currentTimer);
+            MessageBox.Show(t.Seconds.ToString());
+            //Title.Content = string.Format("{0:D2}:{1:D2}", t.Minutes.ToString(), t.Seconds.ToString());
+            currentTimer--;
         }
     }
 }
