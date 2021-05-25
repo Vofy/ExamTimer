@@ -1,0 +1,15 @@
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\bin\Debug\ExamTimer.exe.config
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\bin\Debug\ExamTimer.exe
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\bin\Debug\ExamTimer.pdb
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.csprojAssemblyReference.cache
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\MainWindow.g.cs
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\App.g.cs
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer_MarkupCompile.cache
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer_MarkupCompile.lref
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\MainWindow.baml
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.g.resources
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.Properties.Resources.resources
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.csproj.GenerateResource.cache
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.csproj.CoreCompileInputs.cache
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.exe
+C:\Users\batelkat\GitHub\ExamTimer\ExamTimer\ExamTimer\obj\Debug\ExamTimer.pdb
