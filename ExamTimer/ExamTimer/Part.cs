@@ -1,32 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExamTimer
+﻿namespace ExamTimer
 {
     class Part
     {
-        private string name;
-        private int time;
-        private Part[] subparts;
+        private string title;
+        private string subtitle;
+        private double time;
 
-        public Part(string name, int time)
+        public Part(string title, string subtitle, double time)
         {
-            this.name = name;
+            this.title = title;
+            this.subtitle = subtitle;
             this.time = time;
         }
 
-        public Part(string name, int time, Part[] subparts)
+        public Part(string title, double time)
         {
-            this.name = name;
+            this.title = title;
             this.time = time;
-            this.subparts = subparts;
         }
 
-        public string Name { get => name; }
-        public int Time { get => time; }
-        internal Part[] Subparts { get => subparts; }
+        public Part(string title)
+        {
+            this.title = title;
+        }
+
+        public string Title { get => title; }
+        public string Subtitle { get => subtitle; }
+        public double Time { get => time; }
     }
 }
