@@ -1,0 +1,45 @@
+﻿<Window x:Name="mainWindow" x:Class="ExamTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:xrpb="http://XamlRadialProgressBar/DotNet"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="SPOŠ | Exam Timer" Height="600" Width="550" Icon="icon.png" Background="White">
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="130"/>
+        </Grid.RowDefinitions>
+        <Viewbox Grid.Row="0" Margin="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="34*"/>
+                    <RowDefinition Height="41*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Vertical" Margin="0,20" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Label Margin="0" HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="48" Padding="5,0" FontWeight="Bold">
+                        <Label Name="titleLabel" Content="Exam Timer" Padding="5,0"/>
+                    </Label>
+                    <Label HorizontalContentAlignment="Center" VerticalAlignment="Top" FontSize="36" Padding="5,0">
+                        <Label Name="subtitleLabel" Content="Get ready" Padding="5,0"/>
+                    </Label>
+                </StackPanel>
+                <Grid Grid.Row="1" Margin="0,20">
+                    <xrpb:RadialProgressBar x:Name="radialProgressBar" Value="60" Maximum="60" OuterBackgroundBrush="LightGray" ArcBackgroundWidth="20" ArcWidth="20" 
+			            Foreground="CadetBlue" Margin="0" Width="300" Height="300" />
+                    <Label Margin="0" HorizontalContentAlignment="Center" FontSize="72" VerticalAlignment="Center" Height="120" FontWeight="Bold">
+                        <Label x:Name="countdownLabel" Content="01:00"/>
+                    </Label>
+                </Grid>
+            </Grid>
+        </Viewbox>
+
+        <StackPanel Orientation="Horizontal" Margin="0,60,0,20" Grid.Row="1" HorizontalAlignment="Center">
+            <Button x:Name="startExamButton" Content="Start Exam" Margin="5" FontSize="22" Padding="5" Click="startExamButton_Click"/>
+            <Button x:Name="pauseButton"     Content="Pause" Margin="5" FontSize="22" Padding="5" Click="pauseButton_Click"/>
+            <Button x:Name="nextPartButton"  Content="Next Part" Margin="5" FontSize="22" Padding="5" Click="nextPartButton_Click"/>
+            <Button x:Name="endExamButton"   Content="End Exam" Margin="5" FontSize="22" Padding="5" Click="endExamButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
